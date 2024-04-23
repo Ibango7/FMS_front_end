@@ -23,6 +23,9 @@ const Landing: React.FC = () => {
                 <span>FileLock</span>
                 <p>Your Secure file management system</p>
               </div>
+              <div className={styles.buttonContainer}>
+                <button className={styles.getStartedButton}>Get started</button>
+              </div>
             </div>
           </Header>
           <Content className={styles.contentStyle}>
