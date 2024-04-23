@@ -8,8 +8,14 @@ import logo from "../../../public/assets/logo.png";
 import signaturePic from "../../../public/assets/digital-signature.png";
 import filePic from "../../../public/assets/document.png";
 import configPic from "../../../public/assets/team.png";
+import { useRouter } from 'next/navigation';
 
 const Landing: React.FC = () => {
+  const router = useRouter();
+  const GoToLogin = () =>{
+    router.push('/login');
+  }
+
   return (
     <div>
       <div className={styles.wrapper}>
@@ -24,7 +30,7 @@ const Landing: React.FC = () => {
                 <p>Your Secure file management system</p>
               </div>
               <div className={styles.buttonContainer}>
-                <button className={styles.getStartedButton}>Get started</button>
+                <button className={styles.getStartedButton} onClick={GoToLogin}>Get started</button>
               </div>
             </div>
           </Header>
