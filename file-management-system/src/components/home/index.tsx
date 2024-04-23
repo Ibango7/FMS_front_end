@@ -1,5 +1,6 @@
 import React from "react";
 import { Layout, Menu } from "antd";
+import styles from "./styles/home.module.scss";
 import {
   FileOutlined,
   SolutionOutlined,
@@ -11,7 +12,7 @@ const { Sider, Content } = Layout;
 const Home: React.FC = () => {
   return (
     <Layout style={{ minHeight: "100vh" }}>
-      <Sider width={200} className="site-layout-background">
+      <Sider width={200}>
         <Menu
           mode="inline"
           defaultSelectedKeys={["1"]}
